@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Inter";
+    src: url('https://fonts.google.com/specimen/Inter');
+}
+
+:root {
+    /* font */
+    --ff-inter: 'Inter', sans-serif;
+    --fw-normal: 400;
+    --fw-bold: 600;
+    --fw-extra-bold: 700;
+    --fs-para: 0.875rem;
+    --fs-title: 1.250rem;
+
+    /* colour */
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-grey: hsl(0, 0%, 20%);
+    --clr-dark-grey: hsl(0, 0%, 12%);
+    --clr-off-black: hsl(0, 0%, 8%);
+
+    font-family: var(--ff-inter);
+}
+
+p {
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-para);
+    color: var(--clr-white);
+}
+
+h1 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-title);
+    color: var(--clr-white);
+    margin: 0px;
+}
+
+h3 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-para);
+    color: var(--clr-white);
+}
+
+img {
+    border-radius: 6rem;
+    width: 80px;
+    height: 80px;
+}
+
+.location-text {
+    color: var(--clr-green);
+    font-size: 0.75rem;
+    font-weight: var(--fw-bold);
+    margin-top: 0.5rem;
+}
+
+.avatar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: var(--clr-off-black);
+}
+
+.card {
+    display: flex;
+    max-width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--clr-dark-grey);
+    padding-inline: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.card:hover {
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transform: scale(1.05);
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.tile {
+    color: var(--clr-white);
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-para);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    background-color: var(--clr-grey);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    margin: 0.375rem;
+}
+
+.tile:hover {
+    background-color: var(--clr-green);
+    color: var(--clr-off-black);
+    cursor: pointer;
+}
+
+.attribution {
+    color: var(--clr-white);
+}
