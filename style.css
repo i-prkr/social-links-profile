@@ -82,6 +82,12 @@ img {
     padding-bottom: 2rem;
 }
 
+.card:hover {
+    transition-property: transform;
+    transition-duration: 0.1s;
+    transform: scale(1.05);
+}
+
 .avatar {
     display: flex;
     flex-direction: column;
@@ -103,6 +109,12 @@ img {
     width: 100%;
     text-align: center;
     margin: 0.375rem;
+}
+
+.tile:hover {
+    background-color: var(--clr-green);
+    color: var(--clr-off-black);
+    cursor: pointer;
 }
 
 .attribution {
