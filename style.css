@@ -103,6 +103,11 @@ img {
 }
 
 .tile {
+    color: var(--clr-white);
+    font-family: var(--ff-inter);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-para);
+    text-decoration: none;
     border-radius: 0.5rem;
     background-color: var(--clr-grey);
     padding: 1rem;
